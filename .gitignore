@@ -1,0 +1,16 @@
+# Database credentials
+config/db.php
+
+# Database backup
+*.sql
+
+# Environment files
+.env
+
+# Uploads
+admin/uploads/*
+!admin/uploads/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db

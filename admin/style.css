@@ -1,0 +1,739 @@
+/* =====================================
+   ROYAL HAVEN ADMIN PANEL
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f5f1e8;
+    color:#333;
+
+}
+
+
+
+/* ================= TOP BAR ================= */
+
+
+.admin-top{
+
+    height:80px;
+
+    background:#17120d;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+}
+
+
+
+.admin-logo{
+
+    font-size:32px;
+
+    color:#D4AF37;
+
+    font-family:serif;
+
+    font-weight:bold;
+
+}
+
+
+
+.logout-btn{
+
+    background:#D4AF37;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    display:inline-block;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+.logout-btn:hover{
+
+    background:#fff;
+
+    color:#17120d;
+
+}
+
+
+
+
+/* ================= MAIN LAYOUT ================= */
+
+
+.admin-layout{
+
+    display:flex;
+
+    min-height:calc(100vh - 80px);
+
+}
+
+
+
+
+/* ================= SIDEBAR ================= */
+
+
+.sidebar{
+
+    width:260px;
+
+    background:#17120d;
+
+    padding:35px 20px;
+
+}
+
+
+
+.sidebar a{
+
+    display:block;
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    padding:15px 20px;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:#D4AF37;
+
+    color:white;
+
+}
+
+
+
+
+/* ================= CONTENT ================= */
+
+
+.admin-content{
+
+    flex:1;
+
+    padding:45px;
+
+}
+
+
+
+.admin-content h1{
+
+    font-size:55px;
+
+    color:#2b2118;
+
+}
+
+
+
+.admin-content p{
+
+    color:#777;
+
+    margin:10px 0 30px;
+
+}
+
+
+
+
+
+/* ================= DASHBOARD CARDS ================= */
+
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+.admin-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+.admin-card h2{
+
+    font-size:45px;
+
+    color:#D4AF37;
+
+}
+
+
+
+.admin-card p{
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* ================= TABLE ================= */
+
+
+table{
+
+    width:100%;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    margin-top:35px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+th{
+
+    background:#17120d;
+
+    color:white;
+
+    padding:18px;
+
+}
+
+
+
+td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+tr:hover{
+
+    background:#faf3df;
+
+}
+
+
+
+
+
+/* ================= FORMS ================= */
+
+
+.admin-content form{
+
+    width:750px;
+
+    max-width:100%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    margin-top:30px;
+
+}
+
+
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.input-box label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#2b2118;
+
+}
+
+
+
+.input-box input,
+.input-box textarea,
+.input-box select{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+
+
+.input-box textarea{
+
+    height:130px;
+
+    resize:none;
+
+}
+
+
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus{
+
+    border-color:#D4AF37;
+
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:900px){
+
+
+.admin-layout{
+
+    flex-direction:column;
+
+}
+
+
+.sidebar{
+
+    width:100%;
+
+}
+
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.admin-content h1{
+
+    font-size:40px;
+
+}
+
+
+}
+
+
+/* =========================
+   DASHBOARD PROFESSIONAL UI
+========================= */
+
+
+.dashboard-cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin:40px 0;
+
+}
+
+
+
+.admin-card{
+
+    background:white;
+    padding:35px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+
+
+
+.admin-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.admin-card h2{
+
+    font-size:45px;
+    color:#D4AF37;
+    margin-bottom:10px;
+
+}
+
+
+
+.admin-card p{
+
+    color:#555;
+    font-size:16px;
+
+}
+
+
+
+
+.recent-title{
+
+    background:white;
+    padding:20px 25px;
+    border-radius:15px 15px 0 0;
+    margin-top:40px;
+    margin-bottom:0;
+    font-size:32px;
+    color:#2b2118;
+
+}
+
+
+
+.admin-content table{
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.admin-content table th{
+
+    background:#2b2118;
+    color:white;
+
+}
+
+
+
+
+.admin-content table td{
+
+    background:white;
+
+}
+
+
+
+@media(max-width:1100px){
+
+.dashboard-cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   ADMIN FINAL MOBILE RESPONSIVE FIX
+===================================== */
+
+
+@media(max-width:768px){
+
+
+/* TOP BAR */
+
+.admin-top{
+
+    height:auto;
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+
+}
+
+
+.admin-logo{
+
+    font-size:28px;
+
+}
+
+
+.logout-btn{
+
+    padding:10px 25px;
+
+}
+
+
+
+/* LAYOUT */
+
+
+.admin-layout{
+
+    flex-direction:column;
+
+}
+
+
+
+/* SIDEBAR */
+
+
+.sidebar{
+
+    width:100%;
+    padding:20px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+
+}
+
+
+.sidebar a{
+
+    margin:0;
+    padding:12px 18px;
+
+}
+
+
+
+/* CONTENT */
+
+
+.admin-content{
+
+    padding:25px 15px;
+
+}
+
+
+.admin-content h1{
+
+    font-size:38px;
+    text-align:center;
+
+}
+
+
+
+/* CARDS */
+
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+.admin-card{
+
+    padding:30px 20px;
+
+}
+
+
+.admin-card h2{
+
+    font-size:38px;
+
+}
+
+
+
+/* TABLE RESPONSIVE */
+
+
+.admin-content table{
+
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+
+}
+
+
+
+th,
+td{
+
+    padding:12px;
+
+}
+
+
+
+/* FORM */
+
+
+.admin-content form{
+
+    padding:25px;
+
+}
+
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+
+.admin-logo{
+
+    font-size:24px;
+
+}
+
+
+.sidebar a{
+
+    width:100%;
+    text-align:center;
+
+}
+
+
+.admin-content h1{
+
+    font-size:32px;
+
+}
+
+
+}

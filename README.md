@@ -47,3 +47,36 @@ The project uses MySQL database for storing:
 - Admin users
 
 ## Project Structure
+Royal-Haven-Hotel/
+│
+├── admin/
+│ ├── login.php
+│ ├── dashboard.php
+│ ├── rooms.php
+│ ├── add_room.php
+│ ├── edit_room.php
+│ ├── bookings.php
+│ └── uploads/
+│
+├── config/
+│ └── db.php
+│
+├── assets/
+│ ├── images/
+│ └── videos/
+│
+├── includes/
+│
+├── index.php
+├── rooms.php
+├── booking.php
+├── gallery.php
+├── dining.php
+├── services.php
+├── about.php
+├── contact.php
+│
+├── style.css
+├── script.js
+├── README.md
+└── .gitignore
